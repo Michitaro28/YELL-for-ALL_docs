@@ -1,0 +1,65 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.pkl
+*.sqlite3
+*.log
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.coverage
+.pytest_cache/
+
+# Sphinx build output
+docs/_build/
+docs/*.mo
+docs/*.pot
+
+# Mermaid / UML cache
+*.svg
+*.png
+
+# PlantUML JAR file (optional - if not version-controlled)
+utils/plantuml.jar
+
+# Node modules (if using Mermaid CLI via npm)
+node_modules/
+.mermaid-config.json
+
+# Poetry files
+poetry.lock
+# (poetry.lockは固定化したい場合は除外しないでください)
+
+# Virtual environments (if not in .venv folder inside project)
+.env/
+.venv/
+env/
+venv/
+
+# VS Code settings
+.vscode/
+!.vscode/settings.json  # ← チームで共有する設定はGit管理してもOK
+
+# macOS system files
+.DS_Store
+Icon?
+
+# OS temporary files
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+
+# Build/IDE tools
+.eggs/
+build/
+dist/
+*.egg-info/
+
+# MyST markdown cache
+.ipynb_checkpoints/

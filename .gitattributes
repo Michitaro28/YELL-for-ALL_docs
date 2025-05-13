@@ -1,0 +1,20 @@
+# Unixスタイルの改行を強制（LF）
+* text=auto eol=lf
+
+# Markdown, reStructuredText, Python は UTF-8 + LF
+*.md      text eol=lf
+*.rst     text eol=lf
+*.py      text eol=lf
+
+# バイナリファイルは自動検出
+*.png     binary
+*.jpg     binary
+*.svg     binary
+*.ico     binary
+*.jar     binary
+
+# Windows で作業する場合に .sh などの実行ビット保持
+*.sh      text eol=lf
+
+# Windows で作業する場合に .bat などの実行ビット保持
+*.bat     text eol=crlf
