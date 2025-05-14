@@ -9,6 +9,33 @@
 2. Git :　https://git-scm.com/downloads
 3. GitHub(Clone) が利用できること
 4. Pythonのインストール : https://www.python.org/
+5. PlantUMLのダウンロード　： https://plantuml.com/ja/download 　　
+    ※今回はGPLの「Complied Jar」をクリックしてダウンロード
+6. Graphviz : https://graphviz.org/download/
+    ※上記から「（64bit）Zip archive」をダウンロード
+7. TexLiveのダウンロード: https://www.tug.org/texlive/acquire-iso.html
+    ※上記のリンク先から
+    1. 「download from a nearby CTAN mirror」をクリック
+    2. texlive2024.isoをダウンロード（注意：結構大きくて時間がかかります）
+8. Inkscapeのインストール: https://inkscape.org/ja/release/inkscape-1.4.2/
+    上記より各OSに合わせたものをダウンロード
+    - Pathの確認
+    CLI(Powershellやターミナル)で
+    ```bash
+    Inkscape --help
+    ```
+    上記をたたき、動作するかを確認。返ってこない場合はPathが通っていないことが考えられるので下記を確認
+    1. Windowsキーを押下
+    2. 検索ウィンドから「環境変数」を検索
+    3. 「ユーザー環境変数」のpathを選択し、編集を押下
+    4. 「新規」を押して、下記のディレクトリを追加
+    ```
+    C:\Program Files\Inkscape\bin
+
+    ```
+    5. 環境変数ウィンドのOKを押下し、閉じる
+    6. Powershellなどを開いていた場合は一度閉じて、再起動する
+    7. 再度CLIで、「Inkscape --help」を実行し、「Inkscape」が表示されたらOKです。
 
 ## このリポジトリを使用する上でのセットアップ
 
@@ -28,6 +55,19 @@ Windows(PowerShell)
 ```bash
 poetry --version
 ```
+
+### WindowsOSでのPoetryパスが通っていないとき
+poetry実行のための環境変数設定PATHを設定します。
+1. Windowsキーを押下
+2. 検索ウィンドから「環境変数」を検索
+3. 「ユーザー環境変数」のpathを選択し、編集を押下
+4. 下記のディレクトリを追加
+```
+%USERPROFILE%\AppData\Roaming\Python\Scripts\
+
+```
+5. 環境変数ウィンドのOKを押下し、閉じる
+6. Powershellなどを開いていた場合は一度閉じて、再起動する
 
 ※poetry公式ドキュメント：https://python-poetry.org/docs/#installing-with-pipx
 
@@ -59,7 +99,7 @@ code .
 VSocde上のターミナルで下記のコマンドを実行してください。
 ```bash
 poetry install --with=dev
-
+```
 上記を実行すると依存関係ファイルが一括してダウンロードされると思います。
 
 
