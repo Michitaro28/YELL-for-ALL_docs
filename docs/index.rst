@@ -5,21 +5,22 @@
 
 YELL for ALL documentation
 ===================================
-
 'YELL for ALL<https://yell-for-all2023.com>'のドキュメントです。
-- 代表は菅原です
+このドキュメントはYELL for ALLにおける開発を行う上で下記な事柄について集約する。
+- 技術・知識
+- 開発を行う上での最新情報の取得
+- 開発を行った際のトラブルシューティング・ログノート
+- その他開発における業務フローなど
 
-.. image:: _static/sample.png
-   :alt: Sample Image
-   :width: 300px
-   :align: center
+.. .. image:: _static/sample.png
+..    :alt: Sample Image
+..    :width: 300px
+..    :align: center
 
+.. toctree::
+   :maxdepth: 2
 
-ここは、ドキュメントのトップページです。
-============================================
-
-これから様々なドキュメントを作成していきます。
-例えば。。。
-- Djangoの使い方
-- Pythonの基本文法
-- その他、プログラミングに関する情報
+   tech/backend/index
+   tech/frontend/index
+   tech/knowledge
+   tech/managements/index
