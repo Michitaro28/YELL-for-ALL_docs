@@ -81,7 +81,7 @@ cd <任意のディレクトリパス>
 
 任意のディレクトリに移動したら下記のコマンドを実行
 ```bash
-git clone https://github.com/Michitaro28/YELL-for-ALL_doc.git
+git clone https://github.com/Michitaro28/YELL-for-ALL_docs.git
 ```
 
 cloneが完了したら、cdコマンドでYELL-for-ALL_docフォルダに移動します。
