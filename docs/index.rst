@@ -12,15 +12,26 @@ YELL for ALL documentation
 - 開発を行った際のトラブルシューティング・ログノート
 - その他開発における業務フローなど
 
-.. .. image:: _static/sample.png
-..    :alt: Sample Image
-..    :width: 300px
-..    :align: center
+
+.. YELL for ALL Tech Documentation
+
+ようこそ、YELL for ALL 技術ドキュメントへ！
 
 .. toctree::
    :maxdepth: 2
+   :caption: Backend
 
    tech/backend/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Frontend
+
    tech/frontend/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: その他
+
    tech/knowledge
    tech/managements/index

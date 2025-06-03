@@ -1,9 +1,25 @@
 フロントエンドの技術・知識
 ===================================
 
-.. contents::
-    :local:
-    :depth: 2
+フロントエンド技術一覧
+
+.. toctree::
+    :maxdepth: 2
+    :caption: フレームワーク
+
+    frameworks/index
+    frameworks/react
+    frameworks/nextjs
+    frameworks/tailwind
+
+.. toctree::
+    :maxdepth: 2
+    :caption: 言語
+
+    languages/index
+    languages/HTML
+    languages/CSS
+    languages/javascript
 
 目次
 --------
