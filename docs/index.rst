@@ -13,9 +13,6 @@ YELL for ALL documentation
 - その他開発における業務フローなど
 
 
-.. YELL for ALL Tech Documentation
-
-ようこそ、YELL for ALL 技術ドキュメントへ！
 
 .. toctree::
    :maxdepth: 2
