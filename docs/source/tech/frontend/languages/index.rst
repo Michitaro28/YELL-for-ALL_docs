@@ -7,7 +7,6 @@
     :caption: フロントエンド
 
 
-    tech/frontend/languages/index
     tech/frontend/languages/HTML
     tech/frontend/languages/CSS
     tech/frontend/languages/javascript
