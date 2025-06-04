@@ -54,7 +54,7 @@ html_css_files = []
 html_js_files = []
 
 # -- PlantUML & Mermaid -------------------------------------------------------
-plantuml = "java -jar ./utils/plantuml.jar"
+plantuml = "java -jar ../../utils/plantuml.jar"
 mermaid_cmd = "mmdc"
 
 # -- Intersphinx --------------------------------------------------------------
