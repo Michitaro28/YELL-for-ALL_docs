@@ -63,3 +63,8 @@ dist/
 
 # MyST markdown cache
 .ipynb_checkpoints/
+
+# Python specific
+_build/
+*.pyc
+__pycache__/

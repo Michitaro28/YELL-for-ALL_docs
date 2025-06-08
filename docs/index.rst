@@ -13,22 +13,21 @@ YELL for ALL documentation
 - その他開発における業務フローなど
 
 
+YELL for ALL ドキュメント
+===========================
 
 .. toctree::
    :maxdepth: 2
-   :caption: Backend
+   :caption: コンテンツ
 
-   tech/backend/index
+   intro/overview
+   knowledge
+   backend/index
+   frontend/frameworks/nextjs
+   frontend/frameworks/react
+   frontend/frameworks/tailwind
+   frontend/languages/HTML
+   frontend/languages/CSS
+   frontend/languages/javascript
+   managements/git
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Frontend
-
-   tech/frontend/index
-
-.. toctree::
-   :maxdepth: 2
-   :caption: その他
-
-   tech/knowledge
-   tech/managements/index
