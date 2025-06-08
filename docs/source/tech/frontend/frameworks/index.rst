@@ -5,6 +5,6 @@
     :maxdepth: 2
     :caption: フロントエンド
 
-    ./react
-    ./nextjs
-    ./tailwind
+    react/index
+    nextjs/index
+    tailwind/index
