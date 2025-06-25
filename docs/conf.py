@@ -57,9 +57,17 @@ html_js_files = []
 plantuml = "java -jar ../../utils/plantuml.jar"
 mermaid_cmd = "mmdc"
 
+# Mermaidの追加設定
+mermaid_output_format = "svg"  # svg, png など
+mermaid_version = "10.4.0"     # 必要に応じてバージョン指定
+mermaid_params = [
+    "--theme", "default",  # テーマ: default, dark, forest, neutral など
+]
+
 # -- Intersphinx --------------------------------------------------------------
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
 }
 
+# -- HTML Static Path ---------------------------------------------------------
 html_static_path = ['_static']
