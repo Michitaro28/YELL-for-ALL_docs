@@ -48,7 +48,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 language = 'ja'
 
 # -- Theme --------------------------------------------------------------------
-html_theme = "pydata_sphinx_theme"  # ← 他に furo や pydata_sphinx_theme ,sphinx-book-themeに切替可
+html_theme = "furo"  # ← 他に furo や pydata_sphinx_theme ,sphinx-book-themeに切替可
 html_static_path = ['_static']
 html_css_files = []
 html_js_files = []

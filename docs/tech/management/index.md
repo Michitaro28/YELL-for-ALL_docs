@@ -7,6 +7,5 @@
 :maxdepth: 2
 :caption: コンテンツ
 
-index
-
 ```
+````

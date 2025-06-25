@@ -12,7 +12,6 @@
 :maxdepth: 1
 :caption: コンテンツ
 
-index
 mission
 ask
 tech/index

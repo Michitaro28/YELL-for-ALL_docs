@@ -9,7 +9,6 @@ Bouquet:で用いるバックエンド技術についてまとめる。
 :maxdepth: 2
 :caption: コンテンツ
 
-index
-
-
+python/index
 ```
+````

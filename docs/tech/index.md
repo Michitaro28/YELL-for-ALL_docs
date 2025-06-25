@@ -3,20 +3,17 @@
 ここではBouquet:における開発で用いる技術・知識のまとめを行う。
 
 ## 目次
-- [フロントエンド]
-- [バックエンド]
-- [プロジェクト管理]
+- [フロントエンド](frontend/index.md)
+- [バックエンド](backend/index.md)
+- [プロジェクト管理](management/index.md)
 
 
 
 ```{toctree}
-:maxdepth:2
+:maxdepth: 2
 :caption: コンテンツ
 
-index
-tech/index
-tech/frontend/index
-tech/backend/index
-tech/manegement/index
-
+frontend/index
+backend/index
+management/index
 ```
