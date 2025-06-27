@@ -29,6 +29,10 @@ extensions = [
     'sphinx_click',
 ]
 
+# Mermaid設定を追加
+mermaid_version = "latest"
+mermaid_init_js = "mermaid.initialize({startOnLoad:true});"
+
 myst_enable_extensions = [
     "colon_fence",
     "deflist",

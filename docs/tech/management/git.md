@@ -17,40 +17,65 @@ Gitは分散型バージョン管理システムです。プログラムのフ�
 
 ## Gitの基本ワークフロー
 
-```mermaid
+```{mermaid}
+graph LR
+    A[作業ディレクトリ] --> B[ステージングエリア]
+    B --> C[リポジトリ]
+```
+
+```{mermaid}
 graph TD
-    A[作業ディレクトリ] -->|git add| B[ステージングエリア]
-    B -->|git commit| C[ローカルリポジトリ]
-    C -->|git push| D[リモートリポジトリ]
-    D -->|git pull| A
-    
-    style A fill:#e1f5fe
-    style B fill:#fff3e0
-    style C fill:#e8f5e8
-    style D fill:#fce4ec
+    A[main] --> B[feature/new-function]
+    B --> C[コミット1]
+    C --> D[コミット2]
+    D --> E[main にマージ]
+```
+
+```{mermaid}
+%% gitgraph: を flowchart で置き換え
+flowchart TD
+    A[main: 初期コミット]
+    A --> B[feature: 機能追加]
+    B --> C[feature: テスト追加]
+    A --> D[main: リリース]
+    C --> D[main にマージ]
+```
+
+```{mermaid}
+graph LR
+    A[ローカル] -->|push| B[リモート]
+    B -->|pull| A
+    B -->|clone| C[新しいローカル]
+```
+
+```{mermaid}
+graph TD
+    A[git add] --> B[ステージング]
+    B --> C[git commit]
+    C --> D[ローカルリポジトリ]
+    D --> E[git push]
+    E --> F[リモートリポジトリ]
 ```
 
 ### ステージの説明
 
 1. **作業ディレクトリ**: 実際にファイルを編集する場所
 2. **ステージングエリア**: コミット対象のファイルを準備する場所
-3. **ローカルリポジトリ**: 自分のマシン上の変更履歴保存場所
+3. **リポジトリ**: 自分のマシン上の変更履歴保存場所
 4. **リモートリポジトリ**: サーバー上の共有リポジトリ
 
 ## ブランチの概念とマージ
 
-```mermaid
-gitGraph
-    commit id: "Initial"
-    commit id: "A"
-    branch feature
-    checkout feature
-    commit id: "B"
-    commit id: "C"
-    checkout main
-    commit id: "D"
-    merge feature
-    commit id: "E"
+```{mermaid}
+%% gitGraph を flowchart で置き換え
+flowchart TD
+    A[main: Initial]
+    A --> B[main: A]
+    B --> C[feature: B]
+    C --> D[feature: C]
+    B --> E[main: D]
+    D --> E[main にマージ]
+    E --> F[main: E]
 ```
 
 ### ブランチ戦略の例
@@ -135,29 +160,28 @@ git commit -m "Merge conflict resolved"
 
 ### リベースの概念
 
-```mermaid
-gitGraph
-    commit id: "A"
-    commit id: "B"
-    branch feature
-    checkout feature
-    commit id: "C"
-    commit id: "D"
-    checkout main
-    commit id: "E"
-    commit id: "F"
+```{mermaid}
+%% gitGraph を flowchart で置き換え
+flowchart TD
+    A[main: A]
+    A --> B[main: B]
+    B --> C[feature: C]
+    C --> D[feature: D]
+    B --> E[main: E]
+    E --> F[main: F]
 ```
 
 上記の状態から：
 
-```mermaid
-gitGraph
-    commit id: "A"
-    commit id: "B"
-    commit id: "E"
-    commit id: "F"
-    commit id: "C'"
-    commit id: "D'"
+```{mermaid}
+%% gitGraph を flowchart で置き換え
+flowchart TD
+    A[main: A]
+    A --> B[main: B]
+    B --> C[main: E]
+    C --> D[main: F]
+    D --> E[feature: C']
+    E --> F[feature: D']
 ```
 
 ### リベースの基本コマンド
@@ -254,7 +278,7 @@ CI/CD（継続的インテグレーション/デプロイ）を自動化する�
 
 ## GitHubでの開発フロー
 
-```mermaid
+```{mermaid}
 graph TD
     A[Issue作成] --> B[ブランチ作成]
     B --> C[ローカルで開発]
