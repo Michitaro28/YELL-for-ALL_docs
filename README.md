@@ -126,11 +126,11 @@ poetry env info
 ## HTMLファイルの出力
 更新作業において、.mdファイルを編集したのち、HTML出力してください。その際は下記のコマンド
 ```bash
-poetry run make html
+poetry run make html　        # htmlをbuild
 ```
 出力のクリア
 ```bash
-poetry run make clean        
+poetry run make clean        # _build内をcleanにする
 ```
 PDF出力
 ```bash
@@ -146,8 +146,6 @@ poetry run make linkcheck    # リンクの確認
 ```bash
 poetry run make livehtml     # 開発時に便利
 ```
-[tool.poetry.dependencies]
-python = "^3.10"
 
 
 
