@@ -96,21 +96,35 @@ code .
 
 
 ### 3. 依存関係のインストール
-VSocde上のターミナルで下記のコマンドを実行してください。
+VScode上のターミナルで下記のコマンドを実行してください。
 ```bash
-poetry install --with=dev
+poetry install --with=dev --no-root
 ```
 上記を実行すると依存関係ファイルが一括してダウンロードされると思います。
+
+注意: `--no-root`オプションにより、プロジェクト自体をパッケージとしてインストールしません。
 
 
 ### 4. 仮想環境のアクティベート
 必要に応じて仮想環境の実行をしてください
+
+macOS/Linux:
 ```bash
-poetry shell
+poetry env use python3
+```
+
+Windows:
+```bash
+poetry env use python
+```
+
+仮想環境の確認:
+```bash
+poetry env info
 ```
 
 ## HTMLファイルの出力
-更新作業において、.rstファイルを編集したのち、HTML出力してください。その際のは下記のコマンド
+更新作業において、.mdファイルを編集したのち、HTML出力してください。その際は下記のコマンド
 ```bash
 poetry run make html
 ```
@@ -122,6 +136,18 @@ PDF出力
 ```bash
 poetry run make latexpdf     # PDF出力（LaTeX必要）
 ```
+
+## その他の便利なコマンド
+リンクチェック
+```bash
+poetry run make linkcheck    # リンクの確認
+```
+ライブビルド（ファイル変更を監視して自動でHTMLを再生成）
+```bash
+poetry run make livehtml     # 開発時に便利
+```
+[tool.poetry.dependencies]
+python = "^3.10"
 
 
 

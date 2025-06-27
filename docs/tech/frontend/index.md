@@ -16,5 +16,6 @@
 html
 css
 css_tips
+javascript/index
 
 ```

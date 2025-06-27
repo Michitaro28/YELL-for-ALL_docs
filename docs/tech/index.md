@@ -6,6 +6,7 @@
 - [フロントエンド](frontend/index.md)
 - [バックエンド](backend/index.md)
 - [プロジェクト管理](management/index.md)
+- [用語集](glossary.md)
 
 
 
@@ -16,4 +17,5 @@
 frontend/index
 backend/index
 management/index
+glossary
 ```
