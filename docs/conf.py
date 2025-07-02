@@ -3,10 +3,10 @@ import sys
 from datetime import datetime
 
 # -- Project information -----------------------------------------------------
-project = 'YELL for ALL'
-author = 'Sugawara Michitaro'
+project = 'YELL for ALL Bouquet:'
+author = 'YELL for ALL'
 copyright = f'{datetime.now().year}, {author}'
-release = '0.0.1'
+release = '1.1.0'
 
 # -- General configuration ---------------------------------------------------
 extensions = [
