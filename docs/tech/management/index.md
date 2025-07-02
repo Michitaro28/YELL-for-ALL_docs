@@ -5,6 +5,7 @@
 - [CLI(コマンドライン)](cli.md)
 - [Git/Github](git.md)
 - [VScode](vscode.md)
+- [Gemini_CLI](gemini_cli.md)
 
 ```{toctree}
 :maxdepth: 2
@@ -13,6 +14,7 @@
 cli
 git
 vscode
+gemini_cli
 
 
 ```
