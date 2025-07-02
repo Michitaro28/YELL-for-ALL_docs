@@ -10,5 +10,6 @@ Bouquet:で用いるバックエンド技術についてまとめる。
 :caption: コンテンツ
 
 python/index
+flask/index
 
 ````
