@@ -10,5 +10,5 @@ FlaskはPythonのフレームワークです。軽量で簡単にWEBアプリケ
 
 
 setup
-introduntion
+introduction
 ````
